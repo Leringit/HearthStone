@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Hearthstone</title>
+</head>
+
+<body>
+    <header>
+        <nav class="dp-menu">
+            <a href="https://playhearthstone.com/en-us" target="_blank" class="logo">Hearthstone</a>
+            <ul>
+                <li><a href="#">Cards Type</a>
+                    <ul>
+                        <li><a href="#" id="hero" onclick="types('types', 'hero')">Hero</a></li>
+                        <li><a href="#" id="minion" onclick="types('types', 'minion')">Minion</a></li>
+                        <li><a href="#" id="spell" onclick="types('types', 'spell')">Spell</a></li>
+                        <li><a href="#" onclick="types('types', 'weapon')">Weapon</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Cards Faction</a>
+                    <ul>
+                        <li><a href="#" onclick="types('factions', 'horde')">Horde</a></li>
+                        <li><a href="#" onclick="types('factions', 'alliance')">Alliance</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Cards Race</a>
+                    <ul>
+                        <li><a href="#" onclick="types('races', 'dragon')">Dragon</a></li>
+                        <li><a href="#" onclick="types('races', 'demon')">Demon</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Cards Qualities</a>
+                    <ul>
+                        <li><a href="#" onclick="types('qualities', 'legendary')">Legendary</a></li>
+                        <li><a href="#" onclick="types('qualities', 'rare')">Rare</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="section"></section>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>

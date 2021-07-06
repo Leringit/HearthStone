@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0; 
+    text-decoration: none;
+    list-style: none; 
+}
+
+:root{
+    --cor-fundo: #23232e;
+    --cor-hover: #15151d;
+    --cor-font: #fff;
+}
+
+.dp-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--cor-fundo);
+    height: 15vh;   
+}
+
+.logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--cor-font);
+}
+
+.dp-menu ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.dp-menu ul li{
+    display: inline;
+    position: relative;
+}
+
+.dp-menu ul li a{
+    color: var(--cor-font);
+    display: inline-block;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.dp-menu ul li a:hover{
+    background-color: var(--cor-hover);
+}
+
+/*Sub*/
+
+.dp-menu ul ul{
+    display: none;
+    position: absolute;
+    width: 150px;
+    left: 0;
+}
+
+.dp-menu ul li:hover ul{
+    display: block;
+    background-color: var(--cor-fundo);
+}
+
+.dp-menu ul ul li a{
+    display: block;
+}
