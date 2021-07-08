@@ -1,12 +1,11 @@
 body{
-    background: url(/image/default-4fff3c606c794dc03a915b9071f562d3.jpg) no-repeat center center;
+    background: url(../image/fundo.jpg) no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
     height: 100%;
 }
 
 main{
-  
     margin: 0 auto;
     display: flex;
     justify-content: center;
